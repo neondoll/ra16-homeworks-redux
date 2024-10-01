@@ -1,0 +1,53 @@
+#root { max-width: 1280px; margin: 0 auto; padding: 2rem; text-align: center; }
+
+.service-form { display: flex; column-gap: 0.5rem; }
+
+.service-form__input,
+.service-form__btn,
+.service-search__input,
+.service-list__btn {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: border-color 0.25s;
+}
+
+.service-form__input,
+.service-form__btn,
+.service-search__input { padding: 0.6em 1.2em; }
+
+.service-form__input:hover,
+.service-form__btn:hover,
+.service-search__input:hover,
+.service-list__btn:hover { border-color: #646cff; }
+
+.service-form__input:focus,
+.service-form__input:focus-visible,
+.service-form__btn:focus,
+.service-form__btn:focus-visible,
+.service-search__input:focus,
+.service-search__input:focus-visible,
+.service-list__btn:focus,
+.service-list__btn:focus-visible { outline: 4px auto -webkit-focus-ring-color; }
+
+.service-form__input {}
+
+.service-form__btn,
+.service-list__btn { font-weight: 500; cursor: pointer; }
+
+.service-search { margin-top: 1rem; }
+
+.service-search__input {}
+
+.service-list { margin-top: 1rem; }
+
+.service-list__item { text-align: left; }
+
+.service-list__btn { margin-left: 0.5rem; padding: 0.5em; line-height: 1; }
+
+@media (prefers-color-scheme: light) {
+  .service-form__input,
+  .service-form__btn,
+  .service-search__input,
+  .service-list__btn { background-color: #f9f9f9; }
+}
